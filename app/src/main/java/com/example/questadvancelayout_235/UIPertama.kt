@@ -167,3 +167,18 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 }
             }
         }
+
+
+        // ## BOX COPYRIGHT (DARI KODE ASLI ANDA) ##
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Text(
+                text = stringResource(id = R.string.copyright),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
+    }
+}
