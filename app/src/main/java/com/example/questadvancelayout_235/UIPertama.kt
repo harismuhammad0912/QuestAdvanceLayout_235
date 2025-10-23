@@ -1,6 +1,5 @@
 package com.example.myuipertama
 
-
 import com.example.questadvancelayout_235.R
 
 // Import yang diperlukan untuk Jetpack Compose
@@ -19,35 +18,39 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun AktivitasPertama(modifier: Modifier) {
+fun AktivitasPertama(modifier: Modifier = Modifier) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .padding(top = 100.dp)
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = stringResource(id = R.string.prodi)
-                    fontSize = 35.sp,
+            text = stringResource(id = R.string.prodi),
+            fontSize = 35.sp,
             fontWeight = FontWeight.Bold
-    Text(
-        text = stringResource(id = R.string.univ)
+        )
+        Text(
+            text = stringResource(id = R.string.univ),
             fontSize = 22.sp
         )
         Spacer(modifier = Modifier.height(25.dp))
         Card(
             modifier = Modifier
                 .fillMaxWidth(fraction = 1f)
-                .padding(all = 12.dp)
-                    colors = CardDefaults.cardColors(
-                    containerColor = Color.DarkGray
-                    )
+                .padding(all = 12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.DarkGray
+            )
         ) {
-            Row {
-                val gambar = painterResource(id = R.drawable.yolandanyengiraja)
+            Row(
+                modifier = Modifier.fillMaxWidth() // Tambahkan ini agar Row mengisi lebar Card
+            ) {
+                // KOREKSI: Menggunakan R.drawable.logo_ugm sesuai yang terlihat di proyek Anda
+                val gambar = painterResource(id = R.drawable.logoumy)
                 Image(
                     painter = gambar,
-                    contentDescription = null,
+                    contentDescription = stringResource(id = R.string.logo_desc), // Praktik yang baik: tambahkan deskripsi konten
                     modifier = Modifier
                         .size(100.dp)
                         .padding(all = 5.dp)
@@ -69,17 +72,16 @@ fun AktivitasPertama(modifier: Modifier) {
                     )
                 }
             }
-            Box(
-                modifier = Modifier.fillMaxSize()
-            ){
-                Text(
-                    text = stringResource(id = R.string.copyright),
-                    modifier = Modifier
-                        .align (Alignment.BottomCenter)
-                        .padding(bottom = 50.dp)
-                )
-        )
+        }
+        Box(
+            modifier = Modifier.fillMaxSize()
+        ){
+            Text(
+                text = stringResource(id = R.string.copyright),
+                modifier = Modifier
+                    .align (Alignment.BottomCenter)
+                    .padding(bottom = 50.dp)
+            )
+        }
     }
 }
-
-
