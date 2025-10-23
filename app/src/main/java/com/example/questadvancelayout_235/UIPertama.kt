@@ -96,3 +96,9 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         .size(100.dp)
                         .padding(all = 5.dp) // Modifier disamakan
                 )
+                Spacer(modifier = Modifier.width(30.dp))
+                // Isi Column disesuaikan dengan gambar
+                Column {
+                    Text(
+                        text = "Muhammad Haris",
+                        fontSize = 30.sp, // Ukuran font disamakan
