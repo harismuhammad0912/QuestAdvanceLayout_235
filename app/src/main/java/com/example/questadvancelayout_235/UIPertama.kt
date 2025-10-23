@@ -117,3 +117,53 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         fontSize = 20.sp,
                         color = Color.White,
                         modifier = Modifier.padding(top = 5.dp)
+                    )
+                }
+            }
+        }
+
+        // ## CARD 3 (TAMBAHAN BARU - HIJAU) ##
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp), // Modifier disamakan agar ukuran identik
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Green // Warna diubah menjadi Hijau
+            )
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth()
+            ) {
+                val gambar = painterResource(id = R.drawable.logoumy) // Logo yang sama
+                Image(
+                    painter = gambar,
+                    contentDescription = stringResource(id = R.string.logo_desc),
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(all = 5.dp) // Modifier disamakan
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                // Isi Column identik dengan Card Biru
+                Column {
+                    Text(
+                        text = "Muhammad Haris",
+                        fontSize = 30.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = "Payakumbuh",
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 5.dp)
+                    )
+                    Text(
+                        text = "082173249167",
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 5.dp)
+                    )
+                }
+            }
+        }
