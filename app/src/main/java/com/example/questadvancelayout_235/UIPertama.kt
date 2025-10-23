@@ -97,3 +97,7 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         .padding(all = 5.dp) // Modifier disamakan
                 )
                 Spacer(modifier = Modifier.width(30.dp))
+                // Isi Column disesuaikan dengan gambar
+                Column {
+                    Text(
+                        text = "Muhammad Haris",
