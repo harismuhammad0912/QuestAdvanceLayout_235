@@ -108,19 +108,7 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                     )
                     Text(
                         text = "Payakumbuh", //
-
-
-
-        // ## BOX COPYRIGHT (DARI KODE ASLI ANDA) ##
-        Box(
-            modifier = Modifier.fillMaxSize()
-        ) {
-            Text(
-                text = stringResource(id = R.string.copyright),
-                modifier = Modifier
-                    .align(Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
-            )
-        }
-    }
-}
+                        fontSize = 20.sp, // Ukuran font disamakan
+                        color = Color.White, // Warna diubah menjadi Putih
+                        modifier = Modifier.padding(top = 5.dp) // Padding disesuaikan
+                    )
