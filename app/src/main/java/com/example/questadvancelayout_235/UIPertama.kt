@@ -101,3 +101,8 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 Column {
                     Text(
                         text = "Muhammad Haris",
+                        fontSize = 30.sp, // Ukuran font disamakan
+                        fontWeight = FontWeight.Bold, // Dibuat Bold sesuai gambar
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp) // Padding disesuaikan
+                    )
