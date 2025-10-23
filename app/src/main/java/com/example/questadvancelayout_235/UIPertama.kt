@@ -85,3 +85,5 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 containerColor = Color.Blue // Warna diubah menjadi Biru
             )
         ) {
+            Row(
+                modifier = Modifier.fillMaxWidth()
