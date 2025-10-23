@@ -112,3 +112,5 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                         color = Color.White, // Warna diubah menjadi Putih
                         modifier = Modifier.padding(top = 5.dp) // Padding disesuaikan
                     )
+                    Text(
+                        text = "082173249167", // Teks baru ditambahkan
