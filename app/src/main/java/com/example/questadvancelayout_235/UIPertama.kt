@@ -78,3 +78,10 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
 
 
         Card(
+            modifier = Modifier
+                .fillMaxWidth(fraction = 1f)
+                .padding(all = 12.dp), // Modifier disamakan agar ukuran identik
+            colors = CardDefaults.cardColors(
+                containerColor = Color.Blue // Warna diubah menjadi Biru
+            )
+        ) {
