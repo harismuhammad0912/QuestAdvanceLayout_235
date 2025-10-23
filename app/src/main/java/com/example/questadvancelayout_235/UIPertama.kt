@@ -92,3 +92,7 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                 Image(
                     painter = gambar,
                     contentDescription = stringResource(id = R.string.logo_desc),
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(all = 5.dp) // Modifier disamakan
+                )
