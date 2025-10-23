@@ -114,3 +114,6 @@ fun AktivitasPertama(modifier: Modifier = Modifier) {
                     )
                     Text(
                         text = "082173249167", // Teks baru ditambahkan
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 5.dp)
